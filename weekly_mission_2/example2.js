@@ -3,7 +3,7 @@ const explorers = [
       name: "Explorer 1",
       exercises_completed: 10,
       rate: 99,
-      city: "CDMX",
+      city: "Sonora",
       stack: [
         "js",
         "c#"
@@ -41,7 +41,7 @@ const explorers = [
     {
       name: "Explorer 3",
       exercises_completed: 3,
-      city: "Sonora",
+      city: "CDMX",
       rate: 100,
       stack: [
         "elixir"
@@ -75,5 +75,11 @@ const explorers = [
    console.log("Ejercicio 4")
    const explorerWithJS = explorers.filter(explorerJS => explorerJS.stack.includes('js'))
    console.log(explorerWithJS)
+   explorerWithJS.forEach(explorer_JS => {console.log(explorer_JS.name)})
+
+   //E5
+   console.log('\nEjercicio 5')
+   const found = explorers.find(explorerCity => explorerCity.city == 'CDMX')
+   console.log(found)
    
 
