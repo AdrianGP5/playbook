@@ -88,5 +88,10 @@ const explorers = [
    console.log(total)
 
    //E7
+   console.log('\nEjercicio 7')
+   explorers.forEach(item => {console.log(item.missions.frontend.exercisesFinished + ' ')})
+   console.log(explorers.some(item => item.missions.frontend.exercisesFinished == true))
    
+   //E8
+   console
 
