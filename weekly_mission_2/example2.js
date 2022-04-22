@@ -81,5 +81,12 @@ const explorers = [
    console.log('\nEjercicio 5')
    const found = explorers.find(explorerCity => explorerCity.city == 'CDMX')
    console.log(found)
+
+   //E6
+   console.log('\nEjercicio 6')
+   const total = explorers.reduce((acc,item) => acc + item.exercises_completed,0)
+   console.log(total)
+
+   //E7
    
 
