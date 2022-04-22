@@ -33,7 +33,7 @@ const explorers = [
           exercisesFinished: false
         },
         frontend: {
-          isFinished: false,
+          isFinished: true,
           exercisesFinished: false
         }
       }
@@ -89,9 +89,14 @@ const explorers = [
 
    //E7
    console.log('\nEjercicio 7')
-   explorers.forEach(item => {console.log(item.missions.frontend.exercisesFinished + ' ')})
-   console.log(explorers.some(item => item.missions.frontend.exercisesFinished == true))
+   explorers.forEach(item => {console.log(item.missions.frontend.exercisesFinished)})
+   console.log('\n' + explorers.some(item => item.missions.frontend.exercisesFinished == true))
    
    //E8
-   console
+   console.log('\nEjercicio 8')
+   explorers.forEach(item => {console.log(item.missions.frontend.isFinished)})
+   explorers[2].missions.frontend.isFinished = true;
+   console.log()
+   explorers.forEach(item => console.log(item.missions.frontend.isFinished))
+   console.log('\n' + explorers.every(item => item.missions.frontend.isFinished == true))
 
