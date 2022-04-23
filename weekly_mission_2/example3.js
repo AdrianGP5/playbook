@@ -10,3 +10,14 @@ const student = {
 
 console.log("This is a simple object in JS:")
 console.log(student)
+
+class Students{
+    name
+    age
+    idLaunchX
+    email
+    celPhone
+    missions
+}
+
+console.log(Students)
