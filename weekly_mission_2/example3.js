@@ -5,11 +5,31 @@ const student = {
     idLaunchX: 1808,
     email: "1808@launchx.com",
     cellPhone: '5512345678',
-    missions: ["onboarding", "front-end", "node-js"]
+    missions: ["onboarding", "front-end", "node-js"],
+
+    getName: function(){return this.name},
+    setName: function(name){this.name = name},
+    getAge: function(){return this.age},
+    setAge: function(age){this.age = age},
+    getMissions: function(){return this.missions},
+    setMissions: function(missions){this.missions = missions}
 }
 console.log("This is a simple object in JS:")
 console.log(student)
 
+console.log(student.getName())
+student.setName('NewAdrián')
+console.log(student)
+
+console.log(student.getAge())
+student.setAge(50)
+console.log(student)
+
+console.log(student.getMissions())
+student.setMissions(['mission1', 'mission2', 'mission3'])
+console.log(student)
+
+/*
 //Class without constructor*****************************************************
 class Students{
     name
@@ -63,6 +83,6 @@ console.log(StudentsLX)
 
 const StudentsLX1 = new StudentsLX('ADRIAN',29,1512,'1512@launchx.com',null,['onboarding','front-end','node-js'])
 console.log(StudentsLX1)
-
+*/
 
 
