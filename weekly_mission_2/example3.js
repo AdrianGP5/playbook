@@ -28,7 +28,7 @@ console.log(student)
 console.log(student.getMissions())
 student.setMissions(['mission1', 'mission2', 'mission3'])
 console.log(student)
-//console.log("_")
+console.log("_")
 
 /*
 //Class without constructor*****************************************************
